@@ -1,6 +1,7 @@
-let host = 'http://rap.taobao.org/mockjsdata/23334'
+let host = 'http://rap.taobao.org/mockjsdata/24170'
 let url = {
-  hotLists: '/index/hotLists'
+  hotLists: '/index/hotLists',
+  banner: '/index/banner',
 }
 
 for (let key in url) {
