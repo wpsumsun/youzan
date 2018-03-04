@@ -2,6 +2,9 @@ let host = 'http://rap.taobao.org/mockjsdata/24170'
 let url = {
   hotLists: '/index/hotLists',
   banner: '/index/banner',
+  toplists: '/category/topList',
+  sublists: '/category/subList',
+  rank: '/category/rank',
 }
 
 for (let key in url) {

@@ -27,7 +27,7 @@
           direction: 'horizontal',
           loop: true,
           autoplay: true,
-          effect : 'cube', // 切换效果
+          // effect : 'cube', // 切换效果
 
           // 如果需要分页器
           pagination: {
