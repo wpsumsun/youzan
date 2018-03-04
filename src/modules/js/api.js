@@ -5,6 +5,7 @@ let url = {
   toplists: '/category/topList',
   sublists: '/category/subList',
   rank: '/category/rank',
+  searchlist: '/search/list',
 }
 
 for (let key in url) {

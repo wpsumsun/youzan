@@ -1,15 +1,15 @@
 import Vue from 'vue'
 import axios from 'axios'
-import Foot from 'components/Foot'
 import url from 'js/api.js'
+import mixin from 'js/mixin.js'
 import 'css/common.css'
 import './category.css'
 
 new Vue({
   el: '#app',
   components: {
-    Foot,
   },
+  mixins: [mixin],
   data: {
     topLists: null,
     curIndex: 0,
@@ -41,8 +41,8 @@ new Vue({
         this.rankData = res.data.data
       }).catch(err => console.log(err))
     },
-    fixTwo(price) {
-      return price.toFixed(2)
+    goSearch(category) {
+      location.href = `search.html?keyword=${category.name}&id=${category.id}`
     },
   },
 })

@@ -158,7 +158,8 @@
                   v-for="category in sublists.categoryList"
                   class="category-item js-category-item"
                   data-item-id="category.id"
-                  data-item-name="category.name">
+                  data-item-name="category.name"
+                  @click="goSearch(category)">
                   <img
                     :src="category.image"
                     :alt="category.name"
